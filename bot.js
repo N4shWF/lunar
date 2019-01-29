@@ -276,18 +276,6 @@ if(cmd == "b!embed"){
 
 }
 
-if(cmd == "b!cursos"){ 
-    let user = message.mentions.users.first() || message.author;
-    let adw = new Discord.RichEmbed()
-    
-    .setTitle("CURSOS")
-    .addField("https://browqstore.tk/")                             
-    .setThumbnail("https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif")
-    .setImage("https://cdn.discordapp.com/attachments/538054524569649172/538721544935833630/cursosbrowq.png")
-    .setColor('0x6464ff')
-    .setFooter("@BrowqStore","https://cdn.discordapp.com/attachments/537675785419358208/538052898039267349/logobronwq.png")
-    message.channel.send(adw)
-}
 
 if(cmd == "b!botinfo"){ 
     let user = message.mentions.users.first() || message.author;
@@ -306,7 +294,7 @@ if (cmd === "b!downloads"){
         .setTitle("**CONFIRMADO**")
         .addField(`**Downloads Enviado No Seu Privado**`,"**Muito Obrigado Por Seu Um Cliente Lunar**")                             
 
-        .setThumbnail("https://thumbs.gfycat.com/PleasedWiltedAmurratsnake-size_restricted.gif")
+        .setThumbnail("https://tenor.com/view/6m-rain-wallstreet-makeitrain-gif-8203989")
         .setImage("https://media.discordapp.net/attachments/440733388941557760/443751613136502785/Line-1.gif")
         .setColor('0x6464ff')
         .setFooter("@LunarShop","https://cdn.discordapp.com/attachments/537668637595664384/539836268318818314/lunarlcc.png")
