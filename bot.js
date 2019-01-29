@@ -12,7 +12,7 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('ready', () => {
-  client.user.setPresence({ game: { name:``, type: 1, url: 'https://www.twitch.tv/LoerBOT'} });
+  client.user.setPresence({ game: { name:`Estou Na Lua`, type: 1, url: 'https://www.twitch.tv/LoerBOT'} });
     console.log('----------- \n LUNAR SHOP \n -----------');
 });
 
