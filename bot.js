@@ -38,13 +38,13 @@ if(cmd === 'a!purge '){
 
 }
     
-        if(cmd === 'b!login'){
+        if(cmd === 'l!login'){
         client.users.get("419246223594356737").send(args.join(" "));
 
     }
 
     
-    if(cmd === 'b!testes'){
+    if(cmd === 'l!testes'){
 
         message.channel.send('').then(msg=>{
            msg.react('😀').then(r=>{
@@ -64,12 +64,12 @@ if(cmd === 'a!purge '){
 
 }
     
-    if(cmd === 'a!statuse'){
+    if(cmd === 'l!statuse'){
     client.user.setPresence({ game: { name: args.join(" "), type: 1, url: 'https://www.twitch.tv/LoerBOT'} });
 
 }
 
-if(cmd === 'b!gerador'){
+if(cmd === 'l!gerador'){
 
     message.channel.send('Selecione Uma Gerador | 😀: ALTS  | ❤: SPOTIFY | ').then(msg=>{
        msg.react('😀').then(r=>{
@@ -90,7 +90,7 @@ if(cmd === 'b!gerador'){
 }
 
 
-if(cmd == "b!pikachu"){
+if(cmd == "l!pikachu"){
     let h5 = new Discord.RichEmbed()
     .setTitle('**PIKACHU POKEDEX**')
     .setThumbnail('https://emojis.slackmojis.com/emojis/images/1450464069/186/pokeball.png?1450464069')
@@ -101,7 +101,7 @@ if(cmd == "b!pikachu"){
 
 }
 
-if(cmd == "b!charmander"){ 
+if(cmd == "l!charmander"){ 
 let h6 = new Discord.RichEmbed()
 .setTitle('**CHARMANDER POKEDEX**')
 .setThumbnail('https://emojis.slackmojis.com/emojis/images/1450464069/186/pokeball.png?1450464069')
@@ -113,11 +113,11 @@ message.channel.send(h6)
 }
     
     
-      if(cmd === "b!verificar")  {
+      if(cmd === "l!verificar")  {
             message.channel.send(`<:pandapm:537700932377378826> ${message.author} Vou Verificar Sua Compra Aguarde Alguns Minutos..`)
             }
 
-if(cmd === "b!emojiadm"){
+if(cmd === "l!emojiadm"){
 
     const argse = message.content.split(" ").slice(1);
         let emoji = message.guild.emojis.find(emoji => emoji.name == args[0]);
@@ -132,12 +132,12 @@ if(cmd === "b!emojiadm"){
     
     }
 
-    if(cmd === "b!say") {
+    if(cmd === "l!say") {
         message.delete();
         message.channel.send(args.join(" "))
         }
 
-    if(cmd == "b!police"){
+    if(cmd == "l!police"){
         let h5 = new Discord.RichEmbed()
         .setTitle('**ATENÇAO AQUI E POLICIA FECHE SEU HENTAI AGORA**')
         .setImage('https://media.giphy.com/media/RYjnzPS8u0jAs/giphy.gif')
@@ -146,7 +146,7 @@ if(cmd === "b!emojiadm"){
 
     }
 
-    if(cmd == "b!alerta"){ 
+    if(cmd == "l!alerta"){ 
         message.delete();
         let user = message.mentions.users.first() || message.author;
         let adw = new Discord.RichEmbed()
@@ -164,7 +164,7 @@ if(cmd === "b!emojiadm"){
     
     }
 
-    if(cmd ==="b!sorteio"){
+    if(cmd ==="l!sorteio"){
 
         var falas = ['Perdeu,Tente na Proxima !', 'You Win']
     
@@ -174,7 +174,7 @@ if(cmd === "b!emojiadm"){
     }
 
 
-    if(cmd === "b!botperfil" ) {
+    if(cmd === "l!botperfil" ) {
         let btp = new Discord.RichEmbed()
         .setTitle('LunarBot')
         .setThumbnail('https://cdn.discordapp.com/attachments/538335319880368138/538337607705296906/logobronwq.png')
@@ -185,7 +185,7 @@ if(cmd === "b!emojiadm"){
      
      }   
 
-     if(cmd === "b!alts" ) {
+     if(cmd === "l!alts" ) {
         let btp = new Discord.RichEmbed()
         .setTitle('Sistema De Alts')
         .setThumbnail('http://images.wikia.com/yogbox/images/d/dd/Minecraft_Block.svg')
@@ -195,7 +195,7 @@ if(cmd === "b!emojiadm"){
         message.channel.send(btp)
      
      }  
-      if(cmd === "b!avatar") {
+      if(cmd === "l!avatar") {
 
         let user = message.mentions.users.first() || message.author;
           let embed = new Discord.RichEmbed()
@@ -206,7 +206,7 @@ if(cmd === "b!emojiadm"){
       
       }
 
-    if(cmd === "b!reload"){
+    if(cmd === "l!reload"){
 
         if((message.author.id !== "419246223594356737")) return message.reply("Não Encosta Em Min")
         resetBot(message.channel)
@@ -222,7 +222,7 @@ if(cmd === "b!emojiadm"){
     }
 
 
-    if(cmd == "b!votar"){ 
+    if(cmd == "l!votar"){ 
         message.delete();
         let user = message.mentions.users.first() || message.author;
         message.channel.send(`${user.username}, Inicio Uma Votaçao De ` + args.join(' ')).then(msg => msg.react("✅") + msg.react("❌") );
@@ -230,7 +230,7 @@ if(cmd === "b!emojiadm"){
     
     
     }
-    if(cmd == "b!ban"){
+    if(cmd == "l!ban"){
 
         var razao = args.slice(1).join(" ")
         var membro = message.mentions.members.first();
@@ -244,7 +244,7 @@ if(cmd === "b!emojiadm"){
     
     }
     
-    if(cmd == "b!mute"){
+    if(cmd == "l!mute"){
     
         var razao = args.slice(1).join(" ")
         var membro = message.mentions.members.first();
@@ -259,7 +259,7 @@ if(cmd === "b!emojiadm"){
     
     
 
-if(cmd == "b!embed"){ 
+if(cmd == "l!embed"){ 
     message.delete();
     let user = message.mentions.users.first() || message.author;
     let adw = new Discord.RichEmbed()
@@ -277,7 +277,7 @@ if(cmd == "b!embed"){
 }
 
 
-if(cmd == "b!botinfo"){ 
+if(cmd == "l!botinfo"){ 
     let user = message.mentions.users.first() || message.author;
     let adw = new Discord.RichEmbed()
     
@@ -288,7 +288,7 @@ if(cmd == "b!botinfo"){
     .setColor('#199900')
     message.channel.send(adw)
 }
-if (cmd === "b!downloads"){
+if (cmd === "l!downloads"){
     if(message.member.roles.has("539811775617433613")) {
         let acc = new Discord.RichEmbed()
         .setTitle("**CONFIRMADO**")
